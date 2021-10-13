@@ -22,7 +22,7 @@ createServer({
         {
           id: 2,
           title: 'compras',
-          type: 'deposit',
+          type: 'withdraw',
           categorey: 'mercado',
           amount: 450,
           createdAt: new Date('2021-10-12 14:00:00')
