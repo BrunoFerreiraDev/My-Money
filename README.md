@@ -1,7 +1,9 @@
 ## My-Money
 
 <h4>My-Money é um aplicativo web de finanças para praticar o que foi aprendido no curso de React ignit.</h4>
+
 ## My Money with both modes
+<br/>
 
 ![My Money previw](.github/my-money1.PNG) 
 ![My Money previw](.github/my-money2.PNG) 
