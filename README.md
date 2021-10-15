@@ -28,8 +28,10 @@ $ git clone https://github.com/BrunoFerreiraDev/my-money.git && cd my-money
 
 **Follow the steps below**
 
-in the terminal, run yarn start
 
+in the terminal
+1-execute yarn install or npm i
+2-execute yarn start or mpr start
 
 
 Made  by Bruno Ferreira 👋 [Check out my LinkedIn](https://www.linkedin.com/in/bruno-ferreira-santos-6b2428214/)
