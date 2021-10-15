@@ -1,6 +1,12 @@
 import { createGlobalStyle } from 'styled-components'
 
-export const GlobalStyle = createGlobalStyle`
+interface DefaultTheme {
+    body: string;
+    header: string;
+    button: string;
+}
+
+export const GlobalStyle = createGlobalStyle<{ theme: DefaultTheme }>`
     :root{
         --background: #f0f2f5;
         --red: #E52E4D;
@@ -36,6 +42,14 @@ export const GlobalStyle = createGlobalStyle`
     body{
         background: var(--background);
         -webkit-font-smoothin: antialiased;// em alguns navegadores com o gogle a fonte fica mais nitida
+
+        background: ${(props) => props.theme.body};
+        .header{
+            background: ${(props) => props.theme.header}
+        }
+        .header > div >button{
+            background: ${(props) => props.theme.button}
+        }
     }
     
     body, input, textarea, button{
@@ -92,5 +106,6 @@ export const GlobalStyle = createGlobalStyle`
         &:hover{
             filter: brightness(0.5);
         }
-    }
+    
+}
 `

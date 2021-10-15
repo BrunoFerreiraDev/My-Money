@@ -27,9 +27,9 @@ const TransactionContext = createContext<TransactionContextData>(
 
 export function TransactionsProvider({ children }: TransactionProviderProps) {
     const [transactions, setTransactions] = useState<Transaction[]>([]);
-
     useEffect(() => {
         api.get('transactions')
+            //@ts-ignore
             .then((response) => setTransactions(response.data.transactions))
 
     }, []);
@@ -39,6 +39,7 @@ export function TransactionsProvider({ children }: TransactionProviderProps) {
             ...transactionInput,
             createdAt: new Date()
         })
+        //@ts-ignore
         const { transaction } = response.data
 
         setTransactions([

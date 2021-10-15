@@ -1,6 +1,14 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+interface DefaultTheme {
+    body: string;
+    header: string;
+    button: string;
+    total: string;
+    backgraounSemiDark: string;
+}
+
+export const Container = styled.div<{ theme: DefaultTheme }>`
     display: grid;
     grid-template-columns: repeat(3 ,1fr);
     gap: 2rem;
@@ -11,7 +19,8 @@ export const Container = styled.div`
         padding: 1.5rem 2rem;
         border-radius: 0.25rem;
         color: var(--text-title);  
-
+        background: ${(props) => props.theme.backgraounSemiDark};
+        color: ${(props) => props.theme.fontColor};
         header{
             display: flex;
             align-items: center;
@@ -29,6 +38,7 @@ export const Container = styled.div`
         &.highligth-background{
             background: var(--green);
             color: #FFF;
+            background: ${(props) => props.theme.total};
         }
     }
 `;
