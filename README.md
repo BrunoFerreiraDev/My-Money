@@ -6,7 +6,7 @@
 <br/>
 
 ![My Money previw](.github/my-money1.PNG) 
-![My Money previw](.github/my-money2.PNG) 
+![My Money previw](.github/my-money.PNG) 
 
 
 This project was developed using web based technologies.
